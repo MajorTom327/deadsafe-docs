@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@remix-run/node": "^1.14.3",
+    "@remix-run/react": "^1.14.3",
+    "@remix-run/vercel": "^1.14.3",
+    "@vercel/analytics": "^0.1.11",
+    "@vercel/node": "^2.9.14",
+    "@vercel/remix": "^1.14.3-patch.1",
+    "classnames": "^2.3.2",
+    "daisyui": "^2.51.5",
+    "isbot": "latest",
+    "ramda": "^0.28.0",
+    "ramda-adjunct": "^3.4.0",
+    "react": "^18.2.0",
+    "react-daisyui": "^3.0.3",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "web-vitals": "^3.3.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.14.3",
+    "@remix-run/eslint-config": "^1.14.3",
+    "@remix-run/serve": "^1.14.3",
+    "@types/ramda": "^0.28.23",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.27.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

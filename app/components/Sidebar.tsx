@@ -8,7 +8,7 @@ type Props = {};
 export const Sidebar: React.FC<Props> = ({}) => {
   return (
     <>
-      <Menu className="bg-base-100 w-56 shadow-xl">
+      <Menu className="bg-base-200 w-56 shadow-xl">
         <Menu.Item>
           <Link to="/" className="justify-center">
             <img src={logoSrc} alt="logo" className="w-32 h-auto" />
@@ -29,7 +29,7 @@ export const Sidebar: React.FC<Props> = ({}) => {
         <Menu.Item>
           <Link to="/the-safe">The Safe</Link>
         </Menu.Item>
-        <Menu.Item className="pl-2">
+        <Menu.Item className="pl-4">
           <Link to="/the-safe/keys">The Keys</Link>
         </Menu.Item>
       </Menu>

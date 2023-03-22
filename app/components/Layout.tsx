@@ -32,10 +32,11 @@ export const Layout: React.FC<Props> = ({ children }) => {
 
       <Drawer
         side={<Sidebar />}
+        mobile
         open={isDrawerOpen}
         onClickOverlay={() => setIsDrawerOpen(not)}
       >
-        <div className="container mx-auto p-2 flex flex-col gap-2">
+        <div className="container mx-auto py-2 px-6 flex flex-col gap-2">
           {children}
         </div>
       </Drawer>

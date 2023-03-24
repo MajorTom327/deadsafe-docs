@@ -26,6 +26,7 @@ export const meta: MetaFunction = () => ({
 export const loader = () => {
   const ENV = {
     NODE_ENV: process.env.NODE_ENV,
+    VERCEL_ANALYTICS_ID: process.env.VERCEL_ANALYTICS_ID,
   };
 
   return json({ ENV });

@@ -2,6 +2,7 @@ import React from "react";
 import { Menu } from "react-daisyui";
 import { Link } from "@remix-run/react";
 import logoSrc from "~/assets/deadsafe_logo.webp";
+import getImageUrl from "~/lib/getImageUrl";
 
 type Props = {};
 
@@ -11,7 +12,11 @@ export const Sidebar: React.FC<Props> = ({}) => {
       <Menu className="bg-base-200 w-56 shadow-xl">
         <Menu.Item>
           <Link to="/" className="justify-center">
-            <img src={logoSrc} alt="logo" className="w-32 h-auto" />
+            <img
+              src={getImageUrl(logoSrc)}
+              alt="logo"
+              className="w-32 h-auto"
+            />
           </Link>
         </Menu.Item>
         <Menu.Item tabIndex={0}>

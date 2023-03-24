@@ -50,11 +50,11 @@ export default function App() {
         <LiveReload />
 
         <Analytics />
-        <script>
-          {`
-          window.ENV = ${JSON.stringify(ENV)};
-          `}
-        </script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.ENV = ${JSON.stringify(ENV)}`,
+          }}
+        />
       </body>
     </html>
   );

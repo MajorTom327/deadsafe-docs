@@ -1,0 +1,16 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import {Alert} from "react-daisyui";
+import {Paragraph} from "~/components/paragraph";
+---
+<Layout title="Game">
+  <Alert status="warning">
+      <div class="flex flex-col">
+          <Paragraph>More informations are coming... Stay tuned!</Paragraph>
+          <Paragraph>
+              The story is still in development, so it's not ready to be published
+              yet.
+          </Paragraph>
+      </div>
+  </Alert>
+</Layout>

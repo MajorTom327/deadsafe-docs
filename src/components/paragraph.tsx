@@ -11,7 +11,3 @@ export const Paragraph: React.FC<Props> = ({ children }) => {
     </>
   );
 };
-
-Paragraph.defaultProps = {};
-
-export default Paragraph;

@@ -20,8 +20,9 @@ export const Title: React.FC<Props> = ({
   h5,
   h6,
 }) => {
+
   const classes = classNames({
-    "mt-3 text-4xl": h1,
+    "mt-3 text-4xl": h1 || [h1,h2,h3,h4,h5,h6].filter(Boolean).length === 0,
     "mt-3 text-2xl": h2,
     "text-xl": h3,
     "text-lg": h4,
@@ -37,9 +38,3 @@ export const Title: React.FC<Props> = ({
   if (h6) return <h6 className={classes}>{children}</h6>;
   return null;
 };
-
-Title.defaultProps = {
-  h1: true,
-};
-
-export default Title;

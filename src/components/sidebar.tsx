@@ -1,47 +1,42 @@
 import React from "react";
-import { Menu } from "react-daisyui";
-import { Link } from "@remix-run/react";
+import {Menu} from "react-daisyui";
 import logoSrc from "~/assets/deadsafe_logo.webp";
-import getImageUrl from "~/lib/getImageUrl";
 
 type Props = {};
 
 export const Sidebar: React.FC<Props> = ({}) => {
   return (
     <>
-      <Menu className="bg-base-200 w-56 shadow-xl">
+
+      <Menu className="bg-base-200 w-56 shadow-xl rounded m-2">
         <Menu.Item>
-          <Link to="/" className="justify-center">
+          <a href="/" className="justify-center">
             <img
-              src={getImageUrl(logoSrc)}
+              src={logoSrc.src}
               alt="logo"
               className="w-32 h-auto"
             />
-          </Link>
+          </a>
         </Menu.Item>
         <Menu.Item tabIndex={0}>
-          <Link to="/lore">Lore</Link>
+          <a href="/lore">Lore</a>
         </Menu.Item>
         <Menu.Item className="pl-4">
-          <Link to="/lore/universe">Universe</Link>
+          <a href="/lore/universe">Universe</a>
         </Menu.Item>
         <Menu.Item className="pl-4">
-          <Link to="/lore/crypto-karen">CryptoKaren</Link>
+          <a href="/lore/crypto-karen">CryptoKaren</a>
         </Menu.Item>
         <Menu.Item>
-          <Link to="/game">Game</Link>
+          <a href="/game">Game</a>
         </Menu.Item>
         <Menu.Item>
-          <Link to="/the-safe">The Safe</Link>
+          <a href="/the-safe">The Safe</a>
         </Menu.Item>
         <Menu.Item className="pl-4">
-          <Link to="/the-safe/keys">The Keys</Link>
+          <a href="/the-safe/keys">The Keys</a>
         </Menu.Item>
       </Menu>
     </>
   );
 };
-
-Sidebar.defaultProps = {};
-
-export default Sidebar;
